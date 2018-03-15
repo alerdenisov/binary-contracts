@@ -1,4 +1,4 @@
-pragma solidity 0.4.18;
+pragma solidity 0.4.19;
 
 contract Hello {
   // Save address of latest greeter called greet function
