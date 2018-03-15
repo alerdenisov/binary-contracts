@@ -1,10 +1,12 @@
 pragma solidity 0.4.19;
 
 contract Parent {
-  event ParentPick();
+  uint public called;
+  event ParentPick(uint called);
 
   function pickFromKindergarten() internal {
-    ParentPick();
+    ParentPick(called);
+    called = called + 1;
   }
 }
 
